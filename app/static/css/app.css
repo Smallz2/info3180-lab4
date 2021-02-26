@@ -1,3 +1,31 @@
+/* Root Colors */
+
+:root {
+  --blue: #007bff;
+  --light: #f4f6fa;
+  --dark: #232e3c;
+  --light-grey: #ced4da;
+}
+
+/* Body */
+
 body {
-    padding-top: 5rem;
+  padding-top: 5rem;
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(---dark);
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
